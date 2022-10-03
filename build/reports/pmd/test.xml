@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.39.0" timestamp="2022-10-02T22:16:35.674">
+<file name="/Users/darleneardila/Documents/ISTE422/rit-iste422-project/src/test/java/EdgeConnectorTest.java">
+<violation beginline="7" endline="7" begincolumn="16" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" class="EdgeConnectorTest" variable="testObj" externalInfoUrl="https://pmd.github.io/pmd-6.39.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+</pmd>
