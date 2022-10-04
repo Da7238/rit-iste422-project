@@ -1,8 +1,5 @@
-plugins {
-    id 'java'
-    id 'application'
-    id 'pmd'
-}
+apply plugin: 'java'
+apply plugin: 'application'
 
 java.sourceCompatibility "1.16"
 java.targetCompatibility "1.16"
@@ -27,28 +24,8 @@ repositories {
     mavenCentral()
 }
 
-pmd {
-  ignoreFailures = true
-  consoleOutput = true
-  ruleSets = [
-	"category/java/errorprone.xml", 
-	// "category/java/design.xml", 
-	"category/java/performance.xml"
-	] 
-}
-jar {
-    archiveBaseName = 'junit'
-    archiveVersion = '4.12'
-}
-
-jar {
-    archiveBaseName = 'hamcrest-core'
-    archiveVersion = '1.3'
-}
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
-    // implementation 'hamcrest-core-1.3.jar org.junit.runner.JUnitCore'
-    implementation 'org.apache.logging.log4j:log4j-api:2.13.3'
-    implementation 'org.apache.logging.log4j:log4j-core:2.13.3'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.hamcrest:hamcrest-core:1.3'
 }
